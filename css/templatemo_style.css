@@ -825,3 +825,10 @@ and (max-device-width : 1024px) {
     display: inline-block;
     vertical-align: middle;
 }
+
+/* Adjust overall layout and container for smaller screens */
+@media (max-width: 768px) {
+  .sbody {
+    padding: 0 20px;
+  }
+}

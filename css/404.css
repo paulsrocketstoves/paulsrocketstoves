@@ -70,3 +70,10 @@ a:hover, a:active {
   background-color: red;
 }
 */
+/* Ensure button scales properly on smaller screens */
+@media (max-width: 480px) {
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

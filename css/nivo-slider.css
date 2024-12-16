@@ -117,3 +117,9 @@
 .nivo-controlNav a.active {
 	font-weight:bold;
 }
+/* Limit slider height for smaller screens */
+@media (max-width: 768px) {
+  .nivoSlider {
+    height: auto;
+  }
+}
