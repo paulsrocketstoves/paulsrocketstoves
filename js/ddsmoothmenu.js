@@ -1,5 +1,5 @@
 //** Smooth Navigational Menu- By Dynamic Drive DHTML code library: http://www.dynamicdrive.com
-//** Script Download/ instructions page: http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/
+//** Script Download/ instructions page: http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/ 
 //** Menu created: Nov 12, 2008
 
 //** Dec 12th, 08" (v1.01): Fixed Shadow issue when multiple LIs within the same UL (level) contain sub menus: http://www.dynamicdrive.com/forums/showthread.php?t=39177&highlight=smooth

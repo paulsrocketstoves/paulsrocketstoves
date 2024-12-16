@@ -1,4 +1,4 @@
-/**
+/** 
  * Single Page Nav Plugin
  * Copyright (c) 2013 Chris Wojcik <hello@chriswojcik.net>
  * Dual licensed under MIT and GPL.

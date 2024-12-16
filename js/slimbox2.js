@@ -1,4 +1,4 @@
-/*
+/* 
 	Slimbox v2.03 - The ultimate lightweight Lightbox clone for jQuery
 	(c) 2007-2009 Christophe Beyls <http://www.digitalia.be>
 	MIT-style license.
