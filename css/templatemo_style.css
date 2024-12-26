@@ -272,6 +272,11 @@ h8 { color: #FF4F00; background: rgba(0, 0, 0, 0.65); }
 	padding: 15px 10px;
 }
 
+.templatemo_contact {
+	margin-top: 0; /* Ensure no extra space below header */
+	padding-top: 80px; /* Add minimal padding for design consistency */
+}
+
 .templatemo_reasonbg {
 	background: url(../images/templatemo_reasonbg.jpg) no-repeat;
 	background-position: center;
@@ -297,7 +302,9 @@ p2 {color: #ffffff; background: rgba(0, 0, 0, 0.65); text-align: left; margin: 0
 .templatemo_portfolio {
 	padding: 80px 0px;
 	text-align: center;
-	background-color: #000000
+	background-color: #000000;
+	margin-top: 0; /* Ensure no extra space below header */
+	padding-top: 80px; /* Add minimal padding for design consistency */
 }
 
 .templatemo_portfolio p { padding-bottom: 50px; }
@@ -326,6 +333,8 @@ p2 {color: #ffffff; background: rgba(0, 0, 0, 0.65); text-align: left; margin: 0
 	padding: 60px 0px;
 	color: #ffffff;
 	text-align: center;
+	margin-top: 0; /* Ensure no extra space below header */
+	padding-top: 80px; /* Add minimal padding for design consistency */
 }
 .templatemo_blog p { padding-bottom: 25px; }
 .templatemo_wrapperblogbox	{	
