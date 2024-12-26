@@ -19,9 +19,9 @@ a {
 
 .sbody 
 {
-  margin: 30px; /* Adjust margin size as needed */
+  margin: 5%; /* Adjust margin size as needed */
   background-color: black; /* Sets the background color to black */
-  padding: 0 400px; /* Add padding only to the left and right */
+  padding: 0 5%; /* Add padding only to the left and right */
   color: white; /* Ensures text is readable against a black background */
 }
 
@@ -44,8 +44,9 @@ p {
 .height20 { height: 20px; }
 
 .about_para {
-			text-align: left;
-			margin: 0px 500px 20px
+  text-align: left;
+  margin: 0 auto 20px; /* Center with auto margins */
+  max-width: 800px; /* Restrict content width */
 }
 
 h1, h2, h3, h4, h5, h6, h7, h8 {
@@ -53,11 +54,12 @@ h1, h2, h3, h4, h5, h6, h7, h8 {
 	font-weight: 400;
 }
 
-h1	{	font-size: 1.5em;
-	color: #ffffff;
-	background: #343537;
-	padding: 10px 8px;
-	float: left;
+h1	{	
+  font-size: 1.5em;
+  background: #343537;
+  padding: 10px;
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center align text */
 	}
 	
 h2	{ font-size: 24px; color: #333333; }
@@ -829,7 +831,37 @@ and (max-device-width : 1024px) {
 /* Adjust overall layout and container for smaller screens */
 @media (max-width: 768px) {
   .sbody {
-    padding: 0 20px;
+    margin: 5%;
+	padding: 0 10%;
   }
 }
- 
+ /* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .about_para {
+    margin: 0 5% 20px; /* Adds responsive margins */
+  }
+}
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+}
+/* General Mobile Fixes */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Reduce white space */
+  .height10, .height20 {
+    height: 5px; /* Adjust vertical spacing */
+  }
+
+  /* Adjust generic text */
+  p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+}
