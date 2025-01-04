@@ -624,21 +624,113 @@ p {
     color: #aaa;
 }
 
-/* Gallery Section */
-.gallery-grid {
-    display: flex;
-    gap: 10px;
+/* Experience Gallery Section */
+.experience-gallery {
+    text-align: center; /* Center-align the title and gallery */
+    margin-bottom: 20px;
+}
+
+.experience-gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+.experience-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger images */
+    gap: 15px; /* Spacing between images */
+    margin: 20px auto;
+    max-width: 1000px; /* Constrain the grid width */
+}
+
+.experience-gallery-grid img {
+    width: 100%; /* Ensure images fill grid cells */
+    border-radius: 10px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.experience-gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design for Experience Gallery */
+@media (max-width: 768px) {
+    .experience-gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on smaller screens */
+    }
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dim background */
+    z-index: 1000;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
 
-.gallery-grid img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+/* Lightbox Image - Maintain Aspect Ratio */
+.lightbox-image {
+    max-width: 90%; /* Ensure the image doesn't exceed 90% of the screen width */
+    max-height: 80%; /* Ensure the image doesn't exceed 80% of the screen height */
+    object-fit: contain; /* Maintain aspect ratio without cropping or distortion */
+    border-radius: 10px; /* Add rounded corners for aesthetic */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
-.gallery-grid img:hover {
-    transform: scale(1.05);
+.lightbox-caption {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Close Button */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+    color: #ff5722;
+}
+
+/* Navigation Buttons */
+.lightbox-prev, .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1001;
+    transition: background 0.3s;
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-prev:hover, .lightbox-next:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
