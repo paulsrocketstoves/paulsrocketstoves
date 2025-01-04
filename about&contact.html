@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Paul's Rocket Stoves and how to get in touch">
+    <title>About & Contact | Paul's Rocket Stoves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Paul's Rocket Stoves Logo" class="header-logo">
+            <h1>Paul's Rocket Stoves</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="bookanevent.html">Book an Event</a></li>
+                <li><a href="about&contact.html">About & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="container about-section">
+        <h2>About Paul's Rocket Stoves</h2>
+        <p>
+            Hi, I’m Paul! I founded Paul's Rocket Stoves to bring people together around the warmth and beauty of fire. 
+            From innovative stove designs to unforgettable events, I’m passionate about creating experiences that foster 
+            connection with nature and community. Whether it’s at a farmers' market or a private party, I’m here to make 
+            your event special.
+        </p>
+        <img src="images/pictures/paul.jpg" alt="Paul Jackino" class="about-photo">
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container contact-section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xovqojqg" method="POST" class="contact-form">
+            <div class="form-group">
+                <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="30" required>
+            </div>
+            <div class="form-group">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" maxlength="30" required>
+            </div>
+            <div class="form-group">
+                <input name="subject" type="text" class="form-control" id="subject" placeholder="Your Subject" maxlength="40" required>
+            </div>
+            <div class="txtarea">
+                <textarea name="message" rows="10" class="form-control" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> paulsrockestoves@gmail.com</p>
+            <p><strong>Phone:</strong> +1 (716) 785-9558</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/paulsrocketstoves/" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/pauls.rocket.stoves/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="container events-section">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Farmers' Market - </li>
+            <li>Community Bonfire Night - </li>
+            <li>Private Party - </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Paul's Rocket Stoves LLC. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
