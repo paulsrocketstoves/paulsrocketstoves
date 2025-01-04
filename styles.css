@@ -537,3 +537,108 @@ h1, h2, p {
     margin: 20px auto; /* Center the image with spacing */
     display: block; /* Ensure centering works */
 }
+
+.virtual-experience {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.virtual-experience h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.fire-scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 300px;
+    aspect-ratio: 1; /* Ensures the SVG retains its aspect ratio */
+}
+.virtual-experience p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+p {
+    font-size: 1rem; /* Smaller size for paragraphs */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px;
+}
+
+.event-types {
+    text-align: center; /* Center-align all text */
+    margin: 0 auto; /* Center the section on the page */
+    max-width: 800px; /* Restrict width for better readability */
+    padding: 40px 20px;
+    background: #222; /* Slightly darker background for contrast */
+    border-radius: 10px; /* Rounded edges for a softer look */
+}
+.whats-included {
+    text-align: center; /* Center-align all text */
+    margin: 0 auto; /* Center the section on the page */
+    max-width: 800px; /* Restrict width for better readability */
+    padding: 40px 20px;
+    background: #222; /* Slightly darker background for contrast */
+    border-radius: 10px; /* Rounded edges for a softer look */
+}
+
+.event-types ul, .whats-included ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list items */
+}
+
+.event-types li, .whats-included li {
+    font-size: 1.2em; /* Adjust font size for readability */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background: #111;
+    border-radius: 10px;
+	text-align: center; 
+}
+
+.testimonials blockquote {
+    background: #222;
+    padding: 20px;
+    border-left: 5px solid #ff5722;
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+    color: #fff;
+}
+
+.testimonials footer {
+    text-align: right;
+    font-size: 1em;
+    color: #aaa;
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the experiences of Paul's Rocket Stoves">
+    <title>Experiences | Paul's Rocket Stoves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Paul's Rocket Stoves Logo" class="header-logo">
+            <h1>Paul's Rocket Stoves</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="bookanevent.html">Book an Event</a></li>
+                <li><a href="about&contact.html">About & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Virtual Fire Experience Section -->
+    <section class="virtual-experience">
+        <h2>Paul's Rocket Stove Experiences</h2>
+        <div class="fire-scene">
+            <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                <!-- Background -->
+                <circle cx="150" cy="150" r="150" fill="black" />
+
+                <!-- Fire -->
+                <circle cx="150" cy="220" r="30" fill="orange">
+                    <animate attributeName="r" from="30" to="35" dur="0.5s" repeatCount="indefinite" />
+                    <animate attributeName="fill" values="orange;red;yellow;orange" dur="0.5s" repeatCount="indefinite" />
+                </circle>
+
+                <!-- Left Human -->
+                <rect x="90" y="150" width="20" height="100" fill="#444">
+                    <animateTransform attributeName="transform" type="translate" from="0 0" to="5 -5" dur="1s" repeatCount="indefinite" />
+                </rect>
+                <circle cx="100" cy="140" r="10" fill="#444">
+                    <animateTransform attributeName="transform" type="translate" from="0 0" to="5 -5" dur="1s" repeatCount="indefinite" />
+                </circle>
+
+                <!-- Right Human -->
+                <rect x="190" y="150" width="20" height="100" fill="#444">
+                    <animateTransform attributeName="transform" type="translate" from="0 0" to="-5 -5" dur="1s" repeatCount="indefinite" />
+                </rect>
+                <circle cx="200" cy="140" r="10" fill="#444">
+                    <animateTransform attributeName="transform" type="translate" from="0 0" to="-5 -5" dur="1s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        <p>Feel the warmth and connection of the fire, wherever you are.</p>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="event-types">
+        <h2>Event Types</h2>
+        <ul>
+            <li>🔥 Farmers' Markets: Connect with your community while enjoying the warmth.</li>
+            <li>🔥 Private Parties: Cozy gatherings made memorable with our stoves.</li>
+            <li>🔥 Community Bonfires: Bringing people together with sustainable fire.</li>
+        </ul>
+    </section>
+
+    <!-- What’s Included Section -->
+    <section class="whats-included">
+        <h2>What’s Included</h2>
+        <ul>
+            <li>🔥 Beautifully crafted fire pits</li>
+            <li>🔥 Marshmallow roasting stations</li>
+            <li>🔥 Hot drinks to keep everyone warm</li>
+            <li>🔥 Cozy setups for unforgettable gatherings</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <blockquote>
+            <p>"Our party was unforgettable, thanks to Paul's Rocket Stoves!"</p>
+            <footer>- A Happy Customer</footer>
+        </blockquote>
+        <blockquote>
+            <p>"The perfect cozy addition to our community gathering."</p>
+            <footer>- Community Event Organizer</footer>
+        </blockquote>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery Highlights</h2>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Farmers Market">
+            <img src="images/gallery2.jpg" alt="Private Party">
+            <img src="images/gallery3.jpg" alt="Community Bonfire">
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <h2>Ready to Book Your Experience?</h2>
+        <a href="bookanevent.html" class="btn">Book Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Paul's Rocket Stoves LLC. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
