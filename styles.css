@@ -1,0 +1,413 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+header {
+    background: #000; /* Black header background */
+    color: #fff; /* White text */
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align logo and text */
+}
+
+.header-logo {
+    height: 50px; /* Adjust to fit the header's height */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add space between the logo and text */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Adjust as needed to balance with the logo */
+    color: #fff; /* Ensure header title is white */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #000; /* Black nav background */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* White nav links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #000; /* Black container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000; /* Black footer background */
+    color: #fff; /* White text */
+    position: relative;
+}
+
+a {
+    color: #00f; /* Optional blue for links, adjust as needed */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.video {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video video {
+    max-width: 100%;
+    border: 1px solid #fff; /* White border for contrast */
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; /* Ensure form text is white */
+}
+
+.bio-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+.social-links {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff; /* Ensure social links text is white */
+}
+
+.social-links p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+    filter: brightness(100%); /* Ensure icons are visible */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    margin-bottom: 10px;
+}
+
+.project-separator {
+    margin: 30px auto;
+    width: 80%;
+    height: 2px;
+    background-color: #fff; /* White separator line */
+    border-radius: 1px;
+}
+
+ul {
+    text-align: left;
+    padding-left: 40px;
+    margin: 20px;
+    color: #fff; /* Ensure list text is white */
+}
+
+.references ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff; /* Ensure references text is white */
+}
+
+.references li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #fff; /* White border for contrast */
+    border-radius: 8px;
+    background-color: #000; /* Black background */
+}
+
+.references p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #fff; /* White text */
+}
+
+.references h2 {
+    margin-bottom: 20px;
+    color: #fff; /* Ensure header text is white */
+}
+
+.welcome-video {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome-video video {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+/* Slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Static overlay text for the slider */
+.static-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent black background */
+    color: #fff; /* White text */
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 2; /* Ensure it appears above images */
+}
+
+/* Each slide */
+.slide {
+    display: none;
+    position: relative;
+}
+
+/* Images in the slider */
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111; /* Slightly lighter than black */
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.welcome-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.welcome-section .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.welcome-section .btn:hover {
+    background: #e64a19;
+}
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.highlight-card {
+    position: relative;
+    flex: 1;
+    max-width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.highlight-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.highlight-card::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.highlight-card:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.gallery-preview {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    color: #fff;
+}
+
+.gallery-preview h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-preview .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.gallery-preview .btn:hover {
+    background: #e64a19;
+}
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ff5722;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background: #fff;
+    color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.cta .btn:hover {
+    background: #e64a19;
+    color: #fff;
+}
