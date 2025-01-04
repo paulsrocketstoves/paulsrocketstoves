@@ -411,3 +411,21 @@ ul {
     background: #e64a19;
     color: #fff;
 }
+
+/* Highlight Card Responsive Fix */
+@media (max-width: 768px) {
+    .highlight-card {
+        max-width: 100%; /* Allow cards to take full width */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    .highlight-card::after {
+        font-size: 1em; /* Reduce text size */
+        padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .highlights {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 10px; /* Reduce gap for better spacing */
+    }
+}
