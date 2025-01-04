@@ -429,3 +429,12 @@ ul {
         gap: 10px; /* Reduce gap for better spacing */
     }
 }
+/* Slider Overlay Responsive Fix */
+@media (max-width: 768px) {
+    .static-overlay {
+        font-size: 1em; /* Reduce font size for smaller screens */
+        padding: 15px 20px; /* Adjust padding */
+        width: 90%; /* Ensure the text fits within the screen */
+        word-wrap: break-word; /* Break long words if needed */
+    }
+}
