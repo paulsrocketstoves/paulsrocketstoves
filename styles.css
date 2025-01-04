@@ -190,7 +190,7 @@ ul {
 
 .references h2 {
     margin-bottom: 20px;
-    color: #fff; /* Ensure header text is white */
+	color: #ff5722; /* Vibrant orange color */
 }
 
 .welcome-video {
@@ -271,6 +271,7 @@ ul {
 .welcome-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+	color: #ff5722; /* Vibrant orange color */
 }
 
 .welcome-section p {
@@ -354,6 +355,7 @@ ul {
 .gallery-preview h2 {
     font-size: 2em;
     margin-bottom: 20px;
+	color: #ff5722; /* Vibrant orange color */
 }
 
 .gallery {
@@ -518,6 +520,7 @@ h1, h2, p {
 .events-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+	color: #ff5722; /* Vibrant orange color */
 }
 
 .events-section ul {
@@ -550,6 +553,7 @@ h1, h2, p {
 .virtual-experience h2 {
     font-size: 2em;
     margin-bottom: 20px;
+	color: #ff5722; /* Vibrant orange color */
 }
 
 .fire-scene {
@@ -580,6 +584,10 @@ p {
     background: #222; /* Slightly darker background for contrast */
     border-radius: 10px; /* Rounded edges for a softer look */
 }
+.event-types h2 {
+    color: #ff5722; /* Orange color for the header */
+}
+
 .whats-included {
     text-align: center; /* Center-align all text */
     margin: 0 auto; /* Center the section on the page */
@@ -587,6 +595,10 @@ p {
     padding: 40px 20px;
     background: #222; /* Slightly darker background for contrast */
     border-radius: 10px; /* Rounded edges for a softer look */
+}
+
+.whats-included h2 {
+    color: #ff5722; /* Orange color for the header */
 }
 
 .event-types ul, .whats-included ul {
@@ -606,6 +618,10 @@ p {
     background: #111;
     border-radius: 10px;
 	text-align: center; 
+}
+
+.testimonials h2 {
+    color: #ff5722; /* Orange color for the header */
 }
 
 .testimonials blockquote {
@@ -633,6 +649,7 @@ p {
 .experience-gallery h2 {
     font-size: 2em;
     margin-bottom: 20px; /* Add space below the title */
+	color: #ff5722; /* Vibrant orange color */
 }
 
 .experience-gallery-grid {
@@ -744,4 +761,20 @@ p {
     p, li {
         font-size: 1rem; /* Adjust content size for balance */
     }
+}
+
+/* About Section Styles */
+.about-section h2 {
+    color: #ff5722; /* Vibrant orange color for the header */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contact Section Styles */
+.contact-section h2 {
+    color: #ff5722; /* Vibrant orange color for the header */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
