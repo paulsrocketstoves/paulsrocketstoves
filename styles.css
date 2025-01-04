@@ -415,26 +415,38 @@ ul {
 /* Highlight Card Responsive Fix */
 @media (max-width: 768px) {
     .highlight-card {
-        max-width: 100%; /* Allow cards to take full width */
-        margin-bottom: 20px; /* Add spacing between cards */
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
     .highlight-card::after {
-        font-size: 1em; /* Reduce text size */
-        padding: 8px 15px; /* Adjust padding for smaller screens */
+        font-size: 1em;
+        padding: 8px 15px;
     }
 
     .highlights {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-        gap: 10px; /* Reduce gap for better spacing */
+        flex-direction: column;
+        gap: 10px;
     }
 }
+
 /* Slider Overlay Responsive Fix */
 @media (max-width: 768px) {
     .static-overlay {
-        font-size: 1em; /* Reduce font size for smaller screens */
-        padding: 15px 20px; /* Adjust padding */
-        width: 90%; /* Ensure the text fits within the screen */
-        word-wrap: break-word; /* Break long words if needed */
+        font-size: 1em;
+        padding: 15px 20px;
+        width: 90%;
+        word-wrap: break-word;
     }
+}
+
+/* Ensure Images Are Responsive */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Font Sizes */
+h1, h2, p {
+    font-size: clamp(1rem, 2vw, 2rem);
 }
