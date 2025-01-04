@@ -734,3 +734,14 @@ p {
 .lightbox-prev:hover, .lightbox-next:hover {
     background: rgba(255, 255, 255, 0.5);
 }
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem; /* Slightly larger titles for better hierarchy */
+    }
+
+    p, li {
+        font-size: 1rem; /* Adjust content size for balance */
+    }
+}
