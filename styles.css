@@ -778,3 +778,6 @@ p {
     margin-bottom: 20px;
     text-align: center;
 }
+.highlight-yellow {
+    color: #ffff00; /* Yellow color from your logo */
+}
