@@ -781,3 +781,8 @@ p {
 .highlight-yellow {
     color: #ffff00; /* Yellow color from your logo */
 }
+
+.trademark-symbol {
+    font-size: 0.5em; /* Adjust this value to make the symbol smaller */
+    vertical-align: super; /* Optional: Aligns it to the top like a superscript */
+}
